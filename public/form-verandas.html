@@ -4,47 +4,45 @@
 <!-- Form Name -->
 <legend>Veranda Specific</legend>
 
+<div class="row">
+  <h3 class="col-md-4 control-label large">Veranda Dimensions</h3> 
+</div>
+
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinputFenceLength">Veranda Length Total</label>  
-  <div class="col-md-4">
-  <input id="textinputFenceLength" name="textinputFenceLength" type="text" placeholder="Veranda length" class="form-control input-md" required="">
-  <span class="help-block">help</span>  
+  <label class="col-md-4 control-label" for="textinput">Length</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Veranda Length" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinputVerandaHeight">Veranda Height</label>  
-  <div class="col-md-4">
-  <input id="textinputVerandaHeight" name="textinputVerandaHeight" type="text" placeholder="Veranda Height" class="form-control input-md" required="">
-  <span class="help-block">help</span>  
+  <label class="col-md-4 control-label" for="textinput">Width</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Veranda Width" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radiosFenceStyle">Veranda Style</label>
-  <div class="col-md-4">
-  <div class="radio">
-    <label for="radiosFenceStyle-0">
-      <input type="radio" name="radiosFenceStyle" id="radiosFenceStyle-0" value="1" checked="checked">
-      1
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radiosFenceStyle-1">
-      <input type="radio" name="radiosFenceStyle" id="radiosFenceStyle-1" value="2">
-      2
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radiosFenceStyle-2">
-      <input type="radio" name="radiosFenceStyle" id="radiosFenceStyle-2" value="3">
-      3
-    </label>
-	</div>
+  <label class="col-md-4 control-label" for="textinput">Height</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Veranda Height" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
   </div>
+</div>
+
+<div class="row">
+  <h3 class="col-md-4 control-label large">Style</h3> 
 </div>
 
 <!-- Multiple Radios (inline) -->
@@ -62,10 +60,84 @@
   </div>
 </div>
 
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Structure</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="Zinc" checked="checked">
+      Attached
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="Colour">
+      Free Standing
+    </label>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Roof Style</label>
+  <div class="col-md-1">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="style 1">Flat</option>
+      <option value="style 1">Gable</option>
+      <option value="style 1">Dutched Gable</option>
+      <option value="style 1">Hipped Roof</option>
+    </select>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Structural</label>
+  <div class="col-md-1">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="style 1">C-Section</option>
+      <option value="style 1">Powder Coated C-Section</option>
+      <option value="style 1">Box Beam</option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <h3 class="col-md-4 control-label">Site Details</h3> 
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radiosDelivery">Council Approval</label>
+  <div class="col-md-4">
+    <label class="radio-inline" for="radiosDelivery-0">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-0" value="Included" checked="checked">
+      Included
+    </label> 
+    <label class="radio-inline" for="radiosDelivery-1">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-1" value="Not included">
+      Not included
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radiosDelivery">Delivery</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radiosDelivery-1">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-1" value="Installed">
+      Installed
+    </label>
+    <label class="radio-inline" for="radiosDelivery-0">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-0" value="Supply Only" checked="checked">
+      Supply Only
+    </label> 
+  </div>
+</div>
+
 <!-- Select Basic -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasicCouncil">Location</label>
-  <div class="col-md-5">
+  <div class="col-md-2">
     <select id="selectbasic" name="selectbasic" class="form-control">
      <option value="Aberfoyle Park">Aberfoyle Park</option>
      <option value="Adelaide Airport">Adelaide Airport</option>
@@ -499,6 +571,22 @@
      <option value="Yatala Vale">Yatala Vale</option>
      <option value="Yattalunga">Yattalunga</option>
      </select>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Other Details</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">Any other details...</textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
   </div>
 </div>
 

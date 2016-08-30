@@ -4,13 +4,45 @@
 <!-- Form Name -->
 <legend>Shed Specific</legend>
 
+<div class="row">
+  <h3 class="col-md-4 control-label large">Shed Dimensions</h3> 
+</div>
+
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Shed Size</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Width x Length x Height" class="form-control input-md">
-  <span class="help-block">help</span>  
+  <label class="col-md-4 control-label" for="textinput">Length</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Shed Length" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
   </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Width</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Shed Gable Width" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Height</label>  
+  <div class="col-md-2">
+    <div class="input-group">
+      <input id="textinput" name="textinput" type="text" placeholder="Shed Height" class="form-control input-md">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h3 class="col-md-4 control-label large">Style</h3> 
 </div>
 
 <!-- Multiple Radios (inline) -->
@@ -28,75 +60,265 @@
   </div>
 </div>
 
-<!-- Multiple Checkboxes -->
+<div class="row">
+  <h3 class="col-md-4 control-label large">Gable End Doors</h3> 
+</div>
+
+<!-- Prepended checkbox -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="checkboxes">Doors</label>
-  <div class="col-md-4">
-  <div class="checkbox">
-    <label for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Roller Doors">
-      Roller Doors
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Sliding Doors">
-      Sliding Doors
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-2">
-      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="PA Doors (Personal Access Door)">
-      PA Doors (Personal Access Door)
-    </label>
-	</div>
+  <label class="col-md-4 control-label">Sliding Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
   </div>
 </div>
 
-<!-- Multiple Checkboxes -->
+<!-- Prepended checkbox -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="checkboxes">Extras</label>
+  <label class="col-md-4 control-label">Roller Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">PA Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h3 class="col-md-4 control-label large">Side Doors</h3> 
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Sliding Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Roller Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">PA Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <h3 class="col-md-4 control-label large">Extras</h3> 
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Skylights</label>
+  <div class="col-md-2">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+    </div>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Windows</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Window Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+<!-- Prepended checkbox -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Glass Sliding Doors</label>
+  <div class="col-md-3">
+    <div class="input-group">
+      <select id="selectbasic" name="selectbasic" class="form-control  input-md">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <span class="input-group-addon">qty</span>
+      <input id="textinput" name="textinput" type="text" placeholder="Door Width" class="form-control">
+      <span class="input-group-addon">m</span>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <h3 class="col-md-4 control-label">Site Details</h3> 
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radiosDelivery">Council Approval</label>
   <div class="col-md-4">
-  <div class="checkbox">
-    <label for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Skylights">
-      Skylights
+    <label class="radio-inline" for="radiosDelivery-0">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-0" value="Included" checked="checked">
+      Included
+    </label> 
+    <label class="radio-inline" for="radiosDelivery-1">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-1" value="Not included">
+      Not included
     </label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Windows">
-      Windows
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="checkboxes-2">
-      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="Windows">
-      Glass Sliding Doors
-    </label>
-	</div>
   </div>
 </div>
 
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="radiosDelivery">Delivery Details</label>
+  <label class="col-md-4 control-label" for="radiosDelivery">Delivery</label>
   <div class="col-md-4"> 
-    <label class="radio-inline" for="radiosDelivery-0">
-      <input type="radio" name="radiosDelivery" id="radiosDelivery-0" value="Supply Only" checked="checked">
-      Supply Only
-    </label> 
     <label class="radio-inline" for="radiosDelivery-1">
       <input type="radio" name="radiosDelivery" id="radiosDelivery-1" value="Installed">
       Installed
     </label>
+    <label class="radio-inline" for="radiosDelivery-0">
+      <input type="radio" name="radiosDelivery" id="radiosDelivery-0" value="Supply Only" checked="checked">
+      Supply Only
+    </label> 
   </div>
 </div>
 
 <!-- Select Basic -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="selectbasicCouncil">Location</label>
-  <div class="col-md-5">
+  <div class="col-md-2">
     <select id="selectbasic" name="selectbasic" class="form-control">
      <option value="Aberfoyle Park">Aberfoyle Park</option>
      <option value="Adelaide Airport">Adelaide Airport</option>

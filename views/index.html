@@ -17,11 +17,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
   <body>
-    <div id="form-sheds"></div>
-    <div id="form-verandas"></div>
-    <div id="form-fences"></div>
+    <div class="panel list-group">
+     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#form-sheds" >Shed Form</a>
+      <div id="form-sheds" class="sublinks collapse"></div>
+     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#form-verandas" >Veranda Form</a>
+      <div id="form-verandas"></div>
+     <a href="#" class="list-group-item" data-toggle="collapse" data-target="#form-fences" >Fences Form</a>
+      <div id="form-fences" class="sublinks collapse" ></div>
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
